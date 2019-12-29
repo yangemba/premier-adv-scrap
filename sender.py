@@ -10,7 +10,7 @@ def req(url):
 
 if __name__ == '__main__':
     start = time.time()
-    p = Pool(5)
-    print(p.map(req, ['http://localhost:8888/' for x in range(0,10)]))
+    p = Pool(2)
+    print(p.map(req, ['http://localhost:8888/' for x in range(0,2)]))
     end = time.time() - start
     print(str(end))
